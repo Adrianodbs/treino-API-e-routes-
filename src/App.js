@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './header'
+import RoutesApp from './routes'
+import './style.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <RoutesApp />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
+
+// {nutri.map(item => {
+//   return (
+//     <article key={item.id} className="post">
+//       <strong className="titulo">{item.titulo}</strong>
+//       <img src={item.capa} alt={item.titulo} className="capa" />
+//       <p className="subtitulo">{item.subtitulo}</p>
+//       <a className="botao">Acessar</a>
+//     </article>
+//   )
+// })}
